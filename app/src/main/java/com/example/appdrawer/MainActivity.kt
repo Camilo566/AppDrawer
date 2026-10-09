@@ -25,9 +25,15 @@ class MainActivity : AppCompatActivity() {
         val texto = findViewById<TextView>(R.id.txtConteudo)
         menu.setNavigationItemSelectedListener {
             item -> when(item.itemId){
-                R.id.menu_inicio -> texto.text = "Tela inicial"
-                R.id.menu_config -> texto.text = "Configurações"
-                R.id.menu_perfil -> texto.text = "Meu Perfil"
+                R.id.menu_inicio -> {
+                    texto.text = "Tela inicial"
+                }
+                R.id.menu_config -> {
+                    texto.text = "Configurações"
+                }
+                R.id.menu_perfil -> {
+                    texto.text = "Meu Perfil"
+                }
             }
             //drawer.closeDrawers(GravityCompat.START)
             true
